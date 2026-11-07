@@ -1,0 +1,30 @@
+cabal-version:      2.4
+name:               concessionaria
+version:            0.1.0.0
+synopsis:           Sistema de gestão de uma concessionária (Programação Funcional)
+build-type:         Simple
+
+common comum
+    default-language: Haskell2010
+    ghc-options:      -Wall
+
+library
+    import:           comum
+    hs-source-dirs:   src
+    exposed-modules:  Model
+                      Domain
+                      DadosTeste
+    build-depends:    base >=4 && <5
+
+executable concessionaria
+    import:           comum
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:    base >=4 && <5, concessionaria
+
+test-suite spec
+    import:           comum
+    type:             exitcode-stdio-1.0
+    main-is:          Spec.hs
+    hs-source-dirs:   test
+    build-depends:    base >=4 && <5, concessionaria
