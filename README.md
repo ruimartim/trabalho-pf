@@ -59,5 +59,5 @@ cabal test
 ## Grupo
 
 - Nome Joana Esteves (2025161031)
-- Nome Rui Mendes (nº)
-- Nome Diogo Silva (nº)
+- Nome Rui Mendes (2025157345)
+- Nome Diogo Silva (2025154709)
